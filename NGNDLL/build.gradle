@@ -1,0 +1,93 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'hasanul'
+            keyPassword 'saiyaku'
+            storeFile file("/BOOTCAMP/work/android.jks")
+            storePassword 'saiyaku'
+        }
+    }
+
+
+
+    compileSdkVersion 26
+    buildToolsVersion '27.0.3'
+    defaultConfig {
+        applicationId "my.com.tm.moapps.mitosolt"
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 13
+        versionName "Mitos OLT V13.0"
+
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+
+dependencies {
+
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile('io.socket:socket.io-client:0.8.0') {
+        // excluding org.json which is provided by Android
+        exclude group: 'org.json', module: 'json'
+    }
+
+    //    compile 'com.google.android.gms:play-services-places:10.0.1'
+//    compile 'com.google.android.gms:play-services-nearby:10.0.1'
+
+
+    implementation 'com.android.support:appcompat-v7:26.0.0'
+    implementation 'com.android.support:design:26.0.0'
+    implementation 'com.google.android.gms:play-services-gcm:11.0.4'
+    implementation 'com.google.android.gms:play-services-maps:11.0.4'
+    implementation 'com.google.maps.android:android-maps-utils:0.5'
+    implementation 'com.google.android.gms:play-services-location:11.0.4'
+    implementation 'com.google.android.gms:play-services-places:11.0.4'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.google.firebase:firebase-database:11.0.4'
+    implementation 'com.google.firebase:firebase-auth:11.0.4'
+    implementation 'com.google.firebase:firebase-storage:11.0.4'
+    implementation 'com.firebaseui:firebase-ui-storage:2.0.1'
+    implementation 'com.google.firebase:firebase-messaging:11.0.4'
+
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'com.github.arturogutierrez:badges:1.0.5@aar'
+
+    implementation "me.leolin:ShortcutBadger:1.1.22@aar"
+
+
+    testCompile 'junit:junit:4.12'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+}
+
+
+repositories {
+//    maven {
+//        url "https://maven.google.com"
+//    }
+//    mavenCentral()
+    google()
+    jcenter()
+}
+
+apply plugin: 'com.google.gms.google-services'
+buildscript {
+    ext.kotlin_version = '1.1.4-3'
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}

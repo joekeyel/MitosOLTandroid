@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Mitos2OLT.iml" filepath="$PROJECT_DIR$/Mitos2OLT.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NGNDLL/NGNDLL.iml" filepath="$PROJECT_DIR$/NGNDLL/NGNDLL.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/aging"
+        android:enabled="false"
+        android:icon="@mipmap/iconngnd_2"
+        android:title="Aging" />
+
+
+    <item android:id="@+id/summary"
+        android:title="Summary"
+        android:icon="@mipmap/iconngnd_2"/>
+
+    <item
+        android:id="@+id/listtt"
+        android:enabled="false"
+        android:icon="@mipmap/iconngnd_2"
+        android:title="List TT" />
+
+    <item
+        android:id="@+id/registration"
+        android:enabled="false"
+        android:icon="@mipmap/iconngnd_2"
+        android:title="Registration" />
+
+    <item
+        android:id="@+id/alltt"
+        android:enabled="false"
+        android:icon="@mipmap/iconngnd_2"
+        android:title="Live Feed" />
+
+    <item
+        android:id="@+id/livemap"
+        android:enabled="false"
+        android:icon="@mipmap/iconngnd_2"
+        android:title="Live Maps" />
+
+    <item android:id="@+id/hideshowmap"
+        android:title="Change Maps Type"
+        android:icon="@mipmap/iconngnd_2"/>
+
+    <item
+        android:id="@+id/Adslportstate"
+        android:enabled="false"
+        android:icon="@mipmap/iconngnd_2"
+        android:title="ADSL Port State" />
+
+    <item android:id="@+id/SignOut"
+        android:title="Sign Out"
+        android:icon="@mipmap/iconngnd_2"/>
+
+
+
+
+</menu>

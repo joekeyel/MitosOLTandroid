@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/roundedrow"
+    android:baselineAligned="true">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="CAB_VC5001"
+            android:id="@+id/tvtargetcabinet"
+            android:layout_gravity="center_vertical"
+            android:textSize="40dp"
+            android:textColor="#ffffff"
+            android:layout_weight="100" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/projecttypetv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="100"
+        android:text="SUBB IPMSAN"
+        android:textColor="#ffffff" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="50">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Migration Date"
+                android:id="@+id/tvmigrationdatetitle"
+                android:layout_gravity="left"
+                android:textSize="15dp"
+                android:textColor="#ffffff"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="2016-11-23"
+                android:id="@+id/tvmigrationdate"
+                android:layout_gravity="center|left"
+                android:textSize="10dp"
+                android:textColor="#95fc0d"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="State"
+                android:id="@+id/tv_State"
+                android:layout_gravity="left"
+                android:textSize="15dp"
+                android:textColor="#ffffff"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Perak"
+                android:id="@+id/tvstate"
+                android:layout_gravity="left"
+                android:textSize="10dp"
+                android:textColor="#95fc0d"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="CKC1"
+                android:id="@+id/ckctitle"
+                android:layout_gravity="left"
+                android:textSize="15dp"
+                android:textColor="#ffffff"
+                android:textStyle="italic" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="1-15897145504"
+                android:id="@+id/tvckc1"
+                android:layout_gravity="left"
+                android:textSize="10dp"
+                android:textColor="#95fc0d"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Old Cabinet"
+                android:id="@+id/oldcabinet"
+                android:layout_gravity="left"
+                android:textSize="15dp"
+                android:textColor="#ffffff"
+                android:textStyle="italic" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="BRT_001"
+                android:id="@+id/tvoldcabinet"
+                android:layout_gravity="left"
+                android:textSize="10dp"
+                android:textColor="#95fc0d"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Monitoring Status"
+                android:id="@+id/monitoringstatustitle"
+                android:layout_gravity="left"
+                android:textSize="15dp"
+                android:textColor="#ffffff"
+                android:textStyle="italic" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="IN PROGRESS MONITORING"
+                android:id="@+id/monitoringstatus"
+                android:layout_gravity="left"
+                android:textSize="10dp"
+                android:textColor="#95fc0d"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="50">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="End Of Monitoring Date"
+                android:id="@+id/tvdatefinish"
+                android:layout_gravity="left"
+                android:textSize="15dp"
+                android:textColor="#ffffff"
+                android:textStyle="italic" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="2016-11-28"
+                android:id="@+id/tvstopdate"
+                android:layout_gravity="left"
+                android:textSize="10dp"
+                android:textColor="#95fc0d"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="PMW"
+                android:id="@+id/titelepmw"
+                android:layout_gravity="left"
+                android:textSize="15dp"
+                android:textColor="#ffffff"
+                android:textStyle="italic" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="PE2016110239750"
+                android:id="@+id/tvpmwno"
+                android:layout_gravity="left"
+                android:textSize="10dp"
+                android:textColor="#95fc0d"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="CKC2"
+                android:id="@+id/CKC2"
+                android:layout_gravity="left"
+                android:textSize="15dp"
+                android:textColor="#ffffff"
+                android:textStyle="italic" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="1-15907678381"
+                android:id="@+id/tvckc2"
+                android:layout_gravity="left"
+                android:textSize="10dp"
+                android:textColor="#95fc0d"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Migration Status"
+                android:id="@+id/statuscabinet"
+                android:layout_gravity="left"
+                android:textSize="15dp"
+                android:textColor="#ffffff"
+                android:textStyle="italic" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="TT Monitoring"
+                android:id="@+id/tvstatuscabinet"
+                android:layout_gravity="left"
+                android:textSize="10dp"
+                android:textColor="#95fc0d"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

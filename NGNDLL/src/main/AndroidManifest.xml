@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="my.com.tm.moapps.mitosolt"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="20" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <!-- Samsung -->
+    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" />
+
+    <!-- Sony -->
+    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+
+    <!-- HTC -->
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" />
+
+    <permission
+        android:name="my.com.tm.moapps.mitosolt.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <permission
+        android:name="android.permission.READ_PHONE_STATE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.androidbegin.gcmtutorial.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+
+    <application
+        android:icon="@mipmap/iconngnd_2"
+        android:label="MiTOS OLT"
+        android:theme="@style/AppTheme"
+        android:allowBackup="false">
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+        <activity
+            android:name=".MyActivity"
+            android:configChanges="orientation"
+            android:label="MiTOS OLT"
+            android:screenOrientation="portrait">
+
+
+        </activity>
+
+
+        <activity
+            android:name=".Main"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Update Status TT"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GetIntent"
+            android:configChanges="orientation"
+            android:label="@string/push"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Main_Activity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Master Report Data"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="www.mcc.app"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoadTT"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="List Trouble Ticket"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LoadTTall"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="List Trouble Ticket"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".updatereasoncode"
+            android:label="Update Reason Code"
+            android:screenOrientation="portrait" />
+
+        <receiver android:name=".ServiceReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE" />
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCjESmUgGenOfL1fARSvDCIB6KLg7AT41k" />
+
+        <activity
+            android:name=".summary"
+            android:label="Summary Trouble Ticket"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="www.mcc.summary"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".verification"
+            android:label="Verification"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".aging"
+            android:label="Aging Site"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".schedule"
+            android:label="Schedule Migration"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".verify_sub"
+            android:label="Verification"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".chatacitivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".summary_cabinet"
+            android:label="Summary Cabinet" />
+        <activity
+            android:name=".graph"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".updatescreen_oreo"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Main_aging"
+            />
+        <activity android:name=".icpbatchfiles" />
+        <activity
+            android:name=".livemap"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".viewadslport"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".viewadslportsummary"
+            android:screenOrientation="portrait" />
+        <activity android:name=".login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+
+        </activity>
+
+        <!--for firebase notification service-->
+
+        <service android:name="my.com.tm.moapps.mitosolt.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="my.com.tm.moapps.mitosolt.MyFirebaseMessagingService"
+            android:enabled="true"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+
+    </application>
+
+</manifest>

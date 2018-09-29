@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/capacity"
+        android:title="Capacity"
+        android:icon="@mipmap/iconngnd_2"/>
+
+    <item android:id="@+id/workingsub"
+        android:title="Working Sub"
+        android:icon="@mipmap/iconngnd_2"/>
+
+    <item android:id="@+id/pending"
+        android:title="Pending"
+        android:icon="@mipmap/iconngnd_2"/>
+
+    <item android:id="@+id/completed"
+        android:title="Completed"
+        android:icon="@mipmap/iconngnd_2"/>
+
+
+</menu>

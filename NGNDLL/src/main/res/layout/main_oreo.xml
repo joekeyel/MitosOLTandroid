@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:weightSum="1"
+    android:background="@mipmap/mtm_1">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundedrow"
+        android:layout_margin="10dp">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittexttop">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/tvttno"
+        android:layout_margin="10dp"
+        android:hint="@string/ttno"
+        android:layout_weight="90"
+        android:textSize="20dp" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/sessiontest1"
+            android:onClick="teststreamx1"
+            android:background="@mipmap/dataicon"
+            android:layout_weight="10" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton2"
+            android:onClick="callnumber2"
+            android:background="@mipmap/ic_phone2"
+            android:layout_weight="10" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittextrow">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/tvservicenum"
+            android:layout_margin="10dp"
+            android:hint="@string/servicenumber"
+            android:autoLink="phone"
+            android:layout_weight="90"
+            android:textSize="20dp" />
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/sessiontest2"
+            android:onClick="teststreamx2"
+            android:background="@mipmap/dataicon"
+            android:layout_weight="10" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton"
+            android:onClick="callnumber"
+            android:background="@mipmap/ic_phone2"
+            android:layout_weight="10" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittextbottom">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/tvcusmobile"
+            android:hint="Mobile Number"
+            android:layout_weight="90"
+            android:layout_margin="10dp"
+            android:textSize="20dp" />
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton3"
+            android:onClick="callnumber3"
+            android:background="@mipmap/ic_phone2"
+            android:layout_weight="10" />
+    </LinearLayout>
+    </LinearLayout>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/statusmdfspinner"
+        android:background="@android:drawable/btn_dropdown"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:id="@+id/remarkText"
+        android:layout_gravity="center_horizontal"
+        android:hint="@string/remark"
+        android:lines="5"
+        android:textColor="#000000"
+        android:background="@drawable/edittextbottom"
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingLeft="5dp" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:id="@+id/UpdateButton"
+        android:onClick="updatewhenclick"
+        android:background="@drawable/roundeshape2"
+        android:layout_marginTop="5dp" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Speak"
+        android:id="@+id/Speak"
+        android:onClick="updatewhenclick"
+        android:background="@drawable/roundeshape2"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Please Make An Incoming Call from the service number"
+        android:id="@+id/tvtestcallresult"
+        android:textColor="#000000"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp" />
+
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/address"
+        android:enabled="false"
+        android:icon="@mipmap/iconngnd_2"
+        android:title="Address" />
+
+
+    <item
+        android:id="@+id/lvmaps"
+        android:enabled="false"
+        android:icon="@mipmap/iconngnd_2"
+        android:title="Live Maps" />
+
+
+
+
+</menu>

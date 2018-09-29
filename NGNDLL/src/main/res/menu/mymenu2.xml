@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/registration"
+        android:enabled="false"
+        android:icon="@mipmap/iconngnd_2"
+        android:title="Registration" />
+
+    <item android:id="@+id/summary"
+        android:title="Summary"
+        android:icon="@mipmap/iconngnd_2"/>
+
+    <item
+        android:id="@+id/listtt"
+        android:enabled="false"
+        android:icon="@mipmap/iconngnd_2"
+        android:title="List TT" />
+
+    <item
+        android:id="@+id/verification"
+        android:enabled="false"
+        android:icon="@mipmap/iconngnd_2"
+        android:title="Verification" />
+
+    <item
+        android:id="@+id/whatsapp"
+        android:enabled="false"
+        android:icon="@mipmap/iconngnd_2"
+        android:title="Whatsapp" />
+
+    <item
+        android:id="@+id/agingtt"
+        android:enabled="false"
+        android:icon="@mipmap/iconngnd_2"
+        android:title="Aging TT" />
+
+    <item
+        android:id="@+id/schedule"
+        android:enabled="false"
+        android:icon="@mipmap/iconngnd_2"
+        android:title="Schedule" />
+
+    <item
+        android:id="@+id/icpfiles"
+        android:enabled="false"
+        android:icon="@mipmap/iconngnd_2"
+        android:title="ICP Files" />
+
+
+</menu>
